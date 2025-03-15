@@ -1,0 +1,260 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(to right, #f3f3f3, #e3e3e3);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s ease, color 0.3s ease;
+}
+#forum {
+    border-radius: 55px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(206, 109, 206);
+    font-style: oblique;
+    font-size: 20px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border: 5px;
+}
+
+
+#title{
+    position: relative;
+    top: -770px;
+    left: 1675px;
+}
+#title1{
+    position: relative;
+    top: -780px;
+    left: 1675px;
+}
+#logo{
+    width: 150px;
+    position: relative;
+    top: -880px;
+    left: 1520px;
+}
+
+#mail{
+    color: rgb(0, 0, 0);
+}
+#zakladni_kontakty{
+    margin-left: 375px;
+}
+#zakladni_kontakty2{
+    margin-left: 375px;
+    font-weight: bolder;
+}
+#pedagogicky_zbor{
+    position: relative;
+    left: 75px;
+    bottom: -50px;
+    color: rgb(0, 0, 0);
+}
+#pedagogicky_zbor1{
+    border-radius: 15px;
+    background-color: #ff5252;
+}
+#asistenti{
+    position: relative;
+    left: -140px;
+    bottom: -100px;
+    color: rgb(0, 0, 0);
+}
+#asistenti1{
+    border-radius: 15px;
+    background-color: #a4ffab;
+}
+#provoz_zamnestnanci{
+    position: relative;
+    bottom: -150px;
+    left: -285px;
+    color: rgb(0, 0, 0);
+}
+#provoz_zamnestnanci1{
+    border-radius: 15px;
+    background-color: rgb(120, 194, 255)
+}
+
+
+
+#pedagogicky_zbor1:hover{
+    background-color: #ff2c2c;
+}
+#asistenti1:hover{
+    background-color: #00ff15;
+}
+#provoz_zamnestnanci1:hover{
+    background-color: rgb(31, 154, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.nav-link {
+    text-decoration: none;
+}
+body.dark-mode {
+    background: linear-gradient(to right, #333, #555);
+    color: #f3f3f3;
+}
+#left_side.dark-mode {
+    background: rgba(37, 37, 37, 0.1);
+}
+#menu.dark-mode {
+    background: #313131;
+}
+#menu.dark-mode:hover {
+    background: #424242;
+}
+#logo.dark-mode{
+    filter: invert(1);
+}
+.nav-link.dark-mode {
+    color: #f3f3f3;
+}
+#dark-mode-toggle.dark-mode {
+    background: #333;
+    color: #ff9800;
+}
+#dark-mode-toggle.dark-mode:hover {
+    background: #555;
+}
+/* Sidebar menu */
+#left_side {
+    width: 260px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    left: -260px;
+    top: 0;
+    transition: left 0.5s ease;
+    padding-top: 50px;
+    z-index: 100;
+}
+#left_side.active {
+    left: 0;
+}
+#menu {
+    position: absolute;
+    top: 15px;
+    right: -50px;
+    background: #333;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+#menu:hover {
+    background: #555;
+}
+#toggle-menu {
+    color: white;
+}
+nav {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.nav-link {
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+    transition: 0.3s ease;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+}
+.nav-link:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+#dark-mode-toggle {
+    width: 90%;
+    padding: 12px;
+    margin: 20px auto;
+    border: none;
+    background: #ff9800;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: background 0.3s ease;
+    display: block;
+    text-align: center;
+}
+#dark-mode-toggle:hover {
+    background: #e68900;
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    #forum {
+        width: 80px;
+        height: 80px;
+        font-size: 16px;
+        bottom: 10px;
+        right: 10px;
+    }
+    #title, #title1, #logo {
+        position: static;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+    }
+    #zakladni_kontakty, #zakladni_kontakty2 {
+        margin-left: 0;
+        text-align: center;
+    }
+    #pedagogicky_zbor, #asistenti, #provoz_zamnestnanci {
+        position: static;
+        margin: 20px auto;
+        text-align: center;
+    }
+    #left_side {
+        width: 200px;
+        left: -200px;
+    }
+
+    #left_side.active {
+        left: 0;
+    }
+
+    #menu {
+        right: -40px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-link {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    #dark-mode-toggle {
+        width: 80%;
+        padding: 10px;
+        font-size: 1rem;
+    }
+        .download-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+    }
